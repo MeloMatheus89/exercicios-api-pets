@@ -6,7 +6,34 @@
     <title>Exercicio de PETS HTML</title>
   </head>
   <body>
-    <h1>Veja nossos pets para <strong>adoção</strong></h1>
+    <h1>Pets nas nossas ONGS Parceiras!</h1>
+    <div>
+      <h3>Quer cadastrar o seu pet para adoção?</h3>
+      <h4>Preencha o <strong>formulário abaixo.</strong></h4>
+    </div>
+    <form>
+      <fieldset class="grupo">
+        <div>
+          <label for="especie"><strong>Espécie:</strong></label>
+          <input type="text" id="espécie" required />
+        </div>
+      </fieldset>
+      <fieldset class="grupo">
+        <div>
+          <label for="nome"><strong>Nome:</strong></label>
+          <input type="text" id="nome" required />
+        </div>
+      </fieldset>
+      <fieldset class="grupo">
+        <div>
+          <label for="nome do pet"><strong>Raça:</strong></label>
+          <input type="text" id="nome" required />
+        </div>
+      </fieldset>
+      <button id="cancelar">Cancelar</button>
+      <submit id="submit">Enviar</submit>
+    </form>
+    <h2>Veja nossos pets para <strong>adoção</strong></h2>
     <ul class="lista__pets" id="lista-pets">
       <!-- Aqui deverá ficar a listagem dos pets conforme o exercício -->
     </ul>
