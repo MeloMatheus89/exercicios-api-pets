@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.formulario {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
