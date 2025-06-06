@@ -1,9 +1,12 @@
 * {
-  margin: 0;
+  margin: 0.5rem;
   padding: 0;
   box-sizing: border-box;
 }
 :root {
+  --cor-botao: blueviolet;
+  --cor-bordas: rgb(58, 11, 102);
+  --cor-focus: rgb(191, 154, 226);
 }
 
 body {
@@ -22,4 +25,65 @@ strong {
   width: 75%;
   margin-left: auto;
   margin-right: auto;
+  gap: 1rem;
+}
+
+.grupo {
+  width: 80%;
+  height: 1.8rem;
+  border: 1px solid var(--cor-bordas);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: blueviolet;
+
+  /* Display */
+  display: flex;
+  align-items: center;
+}
+/* Resolver problema de cor no campo de digitação com ajuda das ferramentas de contraste e leitura*/
+.grupo input {
+  border: 1px solid var(--cor-bordas);
+  color: rgb(255, 10, 255);
+}
+
+.grupo input:focus {
+  background-color: var(--cor-focus);
+  border: 1px solid var(--cor-bordas);
+}
+
+.formulario__botoes {
+  width: 300px;
+
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formulario__cancelar {
+  width: 120px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: var(--cor-botao);
+  border: 1px solid var(--cor-bordas);
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.formulario__enviar {
+  background-color: var(--cor-bordas);
+  border: 1px solid var(--cor-botao);
+  border-radius: 4px;
+  width: 120px;
+  height: 32px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.lista__pets {
+  width: 280px;
+  margin: 0 auto;
 }
