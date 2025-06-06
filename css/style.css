@@ -29,13 +29,14 @@ strong {
 }
 
 .grupo {
-  width: 80%;
-  height: 1.8rem;
+  width: 60%;
+  height: 3rem;
   border: 1px solid var(--cor-bordas);
   border-radius: 12px;
   font-size: 0.9rem;
   color: blueviolet;
-
+  margin-left: auto;
+  margin-right: auto;
   /* Display */
   display: flex;
   align-items: center;
