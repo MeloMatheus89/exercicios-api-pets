@@ -12,30 +12,30 @@
       <h3>Quer cadastrar o seu pet para adoção?</h3>
       <h4>Preencha o <strong>formulário abaixo.</strong></h4>
     </div>
-    <form class="formulario">
+    <form class="formulario" id="formulario_pet">
       <fieldset class="grupo">
         <div>
           <label for="especie"><strong>Espécie:</strong></label>
-          <input type="text" id="espécie" required />
+          <input type="text" id="form_especie" required />
         </div>
       </fieldset>
       <fieldset class="grupo">
         <div>
           <label for="nome"><strong>Nome:</strong></label>
-          <input type="text" id="nome" required />
+          <input type="text" id="form_nome" required />
         </div>
       </fieldset>
       <fieldset class="grupo">
         <div>
           <label for="nome do pet"><strong>Raça:</strong></label>
-          <input type="text" id="nome" required />
+          <input type="text" id="form_raca" required />
         </div>
       </fieldset>
       <div class="formulario__botoes">
-        <button id="cancelar" class="formulario__cancelar">Cancelar</button>
         <button type="submit" id="submit" class="formulario__enviar">
           Salvar
         </button>
+        <button id="cancelar" class="formulario__cancelar">Cancelar</button>
       </div>
     </form>
     <hr />
