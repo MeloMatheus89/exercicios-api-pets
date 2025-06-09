@@ -15,9 +15,6 @@ async function enviarFormulario(event) {
   const especie = document.getElementById("form_especie").value;
   const nome = document.getElementById("form_nome").value;
   const raca = document.getElementById("form_raca").value;
-  console.log(especie);
-  console.log(nome);
-  console.log(raca);
 
   try {
     await api.cadastrarPet({ especie, nome, raca });
