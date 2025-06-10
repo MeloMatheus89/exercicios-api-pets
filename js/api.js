@@ -16,7 +16,7 @@ const api = {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(pet),
       });
-      return response.json;
+      return response.json();
     } catch (error) {
       alert(`Erro ao cadastrar um novo pet: ${error}`);
     }
@@ -25,7 +25,7 @@ const api = {
   async buscarPetPorId(id) {
     try {
       const response = await fetch(`http://localhost:3001/pets/${id}`);
-      return await response.json;
+      return await response.json();
     } catch (error) {
       alert(`Não foi possível buscar por esse pet, ${error}`);
     }

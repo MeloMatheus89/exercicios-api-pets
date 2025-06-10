@@ -88,3 +88,14 @@ strong {
   width: 280px;
   margin: 0 auto;
 }
+
+.container__botoes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.botao__editar,
+.botao__apagar {
+  width: 32px;
+  height: 32px;
+}
