@@ -8,29 +8,41 @@
   </head>
   <body>
     <h1>Pets nas nossas ONGS Parceiras!</h1>
-    <div>
+    <div class="topo__formulario">
       <h3>Quer cadastrar o seu pet para adoção?</h3>
       <h4>Preencha o <strong>formulário abaixo.</strong></h4>
     </div>
     <form class="formulario" id="formulario_pet">
       <input type="hidden" id="form_id" />
       <fieldset class="grupo">
-        <div>
-          <label for="especie"><strong>Espécie:</strong></label>
-          <input type="text" id="form_especie" required />
-        </div>
+        <label for="especie"><strong>Espécie:</strong></label>
+        <input
+          type="text"
+          id="form_especie"
+          class="campo"
+          placeholder="Digite a espécie"
+          required
+        />
       </fieldset>
       <fieldset class="grupo">
-        <div>
-          <label for="nome"><strong>Nome:</strong></label>
-          <input type="text" id="form_nome" required />
-        </div>
+        <label for="nome"><strong>Nome:</strong></label>
+        <input
+          type="text"
+          id="form_nome"
+          class="campo"
+          placeholder="Digite o nome"
+          required
+        />
       </fieldset>
       <fieldset class="grupo">
-        <div>
-          <label for="nome do pet"><strong>Raça:</strong></label>
-          <input type="text" id="form_raca" required />
-        </div>
+        <label for="nome do pet"><strong>Raça:</strong></label>
+        <input
+          type="text"
+          id="form_raca"
+          class="campo"
+          placeholder="Digite a raça"
+          required
+        />
       </fieldset>
       <div class="formulario__botoes">
         <button type="submit" id="submit" class="formulario__enviar">
