@@ -11,7 +11,8 @@ const ui = {
     const containerListaDePets = document.getElementById("lista-pets");
     try {
       const listagemDePets = await api.buscarInformacoesDePet();
-      listagemDePets.forEach(ui.escreverPetsNaTela);
+      listagemDePets.forEach(ui.escreverPetNaTela);
+      listagemDePets.innerHTML = "";
     } catch (error) {
       alert(`Um erro ao demonstrar a lista: ${error}`);
     }
@@ -26,7 +27,7 @@ const ui = {
     document.getElementById("form_raca").value = formulario.raca;
   },
 
-  escreverPetsNaTela(lista) {
+  escreverPetNaTela(lista) {
     const containerListaDePets = document.getElementById("lista-pets");
     const li = document.createElement("li");
     li.classList.add("lista__pets__item");
@@ -58,6 +59,15 @@ const ui = {
     iconeApagar.src = "./assets/imagens/icone-excluir.png";
     iconeApagar.alt = "Apagar";
 
+    btnApagar.onclick = async () => {
+      try {
+        await api.excluirPet(lista.id);
+        ui.mostrarPets();
+      } catch (error) {
+        alert(`Algo de errado aconteceu ao apagar esse pet.`);
+        throw error;
+      }
+    };
     btnApagar.appendChild(iconeApagar);
 
     containerBotoes.appendChild(btnEditar);
